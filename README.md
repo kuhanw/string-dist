@@ -16,6 +16,6 @@ The Hamming distance between these two strings is:5.
 
 Why would we want to do this? Because now for two lists of strings size N and M both sharing an alphabet of P characters, this becomes a matrix math problem and we can take advantage of all the machinery around GPU-accelerated fast matrix operations.
 
-We can rapidly compute the NxM matrix of pair-wise similarity distances using matrix operations in Tensorflow or Numba. If our corpus is sufficiently large can take advantage of sparse matrices to lighten our memory load.
+We can rapidly compute the NxM matrix of pair-wise similarity distances using matrix operations in Tensorflow or Numba. If our corpus is sufficiently large we can take advantage of sparse matrices to lighten our memory load.
 
 There are some good tutorials on this on the internet and most of them are usable almost out of the box; [LINK].
