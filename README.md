@@ -12,6 +12,8 @@ Suppose we wanted to compare the two strings: "add" and "aecd" and the alphabet 
 
 where we have padded the first entry, now it's easily to apply any distance metric to provide a quantitative measure of how far apart they are. Note you must one-hot encode and cannot convert the characters at each position into a naive numerical values for the same reason categorical variables are one-hot encoded. I.E. they have no defined ordinality (green is not greater then red and "a" is not greater than "b".
 
-The Hamming distance between these two strings is "5". 
+The Hamming distance between these two strings is:5. 
 
 Why would we want to do this? Because now for two lists of strings size N and M both sharing an alphabet of P characters, this becomes a matrix math problem and we can take advantage of all the machinery around GPU-accelerated fast matrix operations.
+
+We can rapidly compute the NxM matrix of pair-wise similarity distances using matrix operations in Tensorflow or Numba. If our corpus is sufficiently large can take advantage of sparse matrices to lighten our memory load.
