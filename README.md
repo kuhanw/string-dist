@@ -1,6 +1,6 @@
 # string-dist
 
-Attempting to calculate string distance using GPUs (Hamming distance). First we will try using Tensorflow and Python.
+Attempting to quantitative how similar two strings are by a distance metric calculated using GPUs. First we will try using Tensorflow and Python.
 
 The basic idea is to take an string and one-hot encode it, treating each character position as a categorical feature. 
 
